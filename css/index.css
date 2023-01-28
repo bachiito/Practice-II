@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+  margin-block-start: 3rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  font-size: 1.125rem;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

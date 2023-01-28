@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+
+.flex-group:has(h1) {
+  padding: 1em;
+}
+
+.header__link {
+  display: inline-block;
+  padding: 1em;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer__navbar {
+  padding: 0;
+  margin-inline-end: auto;
+}
+
+.footer__link {
+  padding-inline: 0.25em;
+  border-inline-end: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  margin-inline-end: auto;
+}
+
+.aside-title {
+  font-size: 1.125rem;
+}
+
+.black-border {
+  border: 1px solid black;
+}
+
+/* ==================
+    Requerimientos
+================== */
+
+/* El elemento #cabecera debe tener un relleno de 1em en todos los lados */
+
+header {
+  padding: 1em;
+}
+
+/* El elemento #menu debe tener un relleno de 0.5em en todos los lados y un margen inferior de 
+  0.5em. */
+#menu {
+  padding: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+/* El resto de elementos (#noticias, #publicidad, #principal, #secundario) deben tener 0.5em 
+  de relleno en todos sus lados, salvo el elemento #pie, que sólo debe tener relleno en la zona 
+  superior e inferior. */
+#noticias,
+#publicidad,
+#principal,
+#secundario {
+  padding: 0.5em;
+}
+
+#pie {
+  padding-block: 0.5em;
+}
+
+/* Los elementos .articulo deben mostrar una separación entre ellos de 1em. */
+article + article {
+  margin-block-start: 1em;
+}
+
+/* Las imágenes de los artículos muestran un margen de 0.5em en todos sus lados. */
+.article__img {
+  margin: 0.5em;
+}
+
+/* El elemento #publicidad está separado 1em de su elemento superior. */
+#publicidad {
+  margin-block-start: 1em;
+}
+
+/* El elemento #pie debe tener un margen superior de 1em. */
+#pie {
+  margin-block-start: 1em;
+}

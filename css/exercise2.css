@@ -1,0 +1,79 @@
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+  margin-block-start: 3rem;
+}
+
+#titulo {
+  color: teal;
+}
+
+strong,
+tfoot th,
+h2 + p a, /* todos los elementos a que estén dentro de un párrafo que esté después de un h2*/
+tbody tr:last-child th /* último th de la última fila del tbody*/ {
+  color: red;
+}
+
+th,
+.destacado {
+  color: orange;
+}
+
+a em,
+caption,
+#subtitulo {
+  color: blue;
+}
+
+span.especial {
+  color: purple;
+}
+
+span#especial {
+  color: fuchsia;
+}
+
+td {
+  color: green;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+td strong {
+  color: orange;
+}
+
+#adicional {
+  color: olive;
+}
+
+p a {
+  color: green;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  background-color: hsl(219, 100%, 65%);
+}
