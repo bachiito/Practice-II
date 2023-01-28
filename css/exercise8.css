@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+a {
+  display: block;
+  font-size: 1.125rem;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+/* ================= 
+    Requerimientos 
+================= */
+
+/* En su estado normal, los enlaces se muestran de color rojo #CC0000 */
+a {
+  color: red;
+}
+
+/* Cuando el usuario pasa su ratón sobre el enlace, se muestra con un color de fondo rojo
+#CC0000 y la letra de color blanco #FFF */
+a:hover {
+  color: #ffffff;
+  background-color: #cc0000;
+}
+
+/* Los enlaces visitados se muestran en color gris claro #CCC */
+a:visited {
+  color: #ccc;
+}
