@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+
+.flex-group:has(h1) {
+  padding: 1em;
+}
+
+.header__link {
+  display: inline-block;
+  padding: 1em;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer__navbar {
+  padding: 0;
+  margin-inline-end: auto;
+}
+
+.footer__link {
+  padding-inline: 0.25em;
+  border-inline-end: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  margin-inline-end: auto;
+}
+
+.aside-title {
+  font-size: 1.125rem;
+}
+
+.article__text {
+  margin-block-start: 0;
+}
+
+.black-border {
+  border: 1px solid black;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+header {
+  padding: 1em;
+}
+
+#menu {
+  padding: 0.5em;
+  margin-block-end: 0.5em;
+  width: min(50em, 100% - 2rem);
+}
+
+#noticias,
+#publicidad,
+#principal,
+#secundario {
+  padding: 0.5em;
+}
+
+#secundario {
+  align-self: flex-start;
+}
+
+#pie {
+  padding-block: 0.5em;
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+article + article {
+  margin-block-start: 1em;
+}
+
+.article__img {
+  margin: 0.5em;
+  margin-block-start: 0;
+  align-self: flex-start;
+}
+
+#publicidad {
+  margin-block-start: 1em;
+}
+
+#pie {
+  margin-block-start: 1em;
+}
+
+/* ================= 
+    Requerimientos 
+================= */
+
+/* Eliminar el borde gris que muestran por defecto todos los elementos */
+.black-border {
+  border: none;
+}
+
+/* El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99) */
+#menu {
+  border-block-end: 1px solid #004c99;
+}
+
+/* El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5) */
+#noticias {
+  border: 1px solid #c5c5c5;
+}
+
+/* El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600 */
+#publicidad {
+  border: 1px dotted #cc6600;
+}
+
+/* El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600 */
+#secundario {
+  border: 1px solid #cc6600;
+}
+
+/* El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5 */
+#pie {
+  border-block-start: 1px solid #c5c5c5;
+  border-block-end: 1px solid #c5c5c5;
+}
