@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  padding: 1rem;
+  margin-inline: auto;
+
+  background-color: lightgray;
+}
+
+.flex-group {
+  display: flex;
+}
+
+.anterior {
+  margin-inline-end: auto;
+}
+
+p {
+  margin: 0;
+  font-size: 1.125rem;
+}
