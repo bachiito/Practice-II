@@ -47,8 +47,31 @@ h1 {
   font-size: 1.125rem;
 }
 
+.article__text {
+  margin-block-start: 0;
+}
+
 .black-border {
   border: 1px solid black;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
 }
 
 /* ==================
@@ -90,6 +113,10 @@ article + article {
 /* Las imágenes de los artículos muestran un margen de 0.5em en todos sus lados. */
 .article__img {
   margin: 0.5em;
+
+  /* Para alinear las imágenes con el párrafo inicial de cada artículo */
+  align-self: flex-start;
+  margin-block-start: 0;
 }
 
 /* El elemento #publicidad está separado 1em de su elemento superior. */
