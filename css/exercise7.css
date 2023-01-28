@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+
+.flex-group:has(h1) {
+  padding: 1em;
+}
+
+.header__link {
+  display: inline-block;
+  padding: 1em;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer__navbar {
+  padding: 0;
+  margin-inline-end: auto;
+}
+
+.footer__link {
+  padding-inline: 0.25em;
+  border-inline-end: 1px solid black;
+}
+
+h1 {
+  margin: 0;
+  margin-inline-end: auto;
+}
+
+.aside-title {
+  font-size: 1.125rem;
+}
+
+.secundario__title {
+  padding: 0.2em;
+  background-color: #db905c;
+}
+
+.margin-top-0 {
+  margin-block-start: 0;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+header {
+  padding: 1em;
+  margin-inline: auto;
+  margin-block-end: 0.5em;
+  width: min(50em, 100% - 2rem);
+  background-image: linear-gradient(135deg, #f8f8f8, #fff6cd, #db905c);
+}
+
+#menu {
+  padding: 0.5em;
+  border-block-start: 1px solid #004c99;
+  border-block-end: 1px solid #004c99;
+  width: min(50em, 100% - 2rem);
+  background-image: linear-gradient(135deg, #f8f8f8, #fff6cd, #db905c);
+}
+
+#noticias,
+#publicidad,
+#principal,
+#secundario {
+  padding: 0.5em;
+}
+
+#secundario {
+  align-self: flex-start;
+  border: 1px solid #cc6600;
+}
+
+#pie {
+  padding-block: 0.5em;
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+  margin-block-start: 1em;
+  border-block-start: 1px solid #c5c5c5;
+  border-block-end: 1px solid #c5c5c5;
+  background-color: #f8f8f8;
+}
+
+article + article {
+  margin-block-start: 1em;
+}
+
+.article__img {
+  margin: 0.5em;
+  margin-block-start: 0;
+  align-self: flex-start;
+}
+
+#publicidad {
+  margin-block-start: 1em;
+  border: 1px dotted #cc6600;
+  background-color: #fff6cd;
+}
+
+#noticias {
+  border: 1px solid #c5c5c5;
+  background-color: #f8f8f8;
+}
+
+.bold-text {
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+}
+
+/* ================= 
+    Requerimientos 
+================= */
+
+/* La fuente base de la página debe ser: color negro, tipo Arial, tamaño 0.9em, interlineado 1.4 */
+body {
+  color: black;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+/* Los elementos <h2> de .articulo se muestran en color #CC6600, con un tamaño de letra de
+1.6em, un interlineado de 1.2 y un margen inferior de 0.3em. */
+.subtitle {
+  color: #cc6600;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-block-end: 0.3em;
+}
+
+/* Los elementos del #menu deben mostrar un margen a su derecha de 1em y sus enlaces deben
+ser de color blanco y tamaño de letra 1.3em */
+section > * {
+  margin-inline-end: 1em;
+}
+
+section a {
+  color: white;
+  font-size: 1.3em;
+}
+
+/* El tamaño del texto de todos los contenidos de #lateral debe ser de 0.9em. La fecha de cada
+noticia debe ocupar el espacio de toda su línea y mostrarse en color gris claro #999.
+El elemento <h3> de #noticias debe mostrarse de color #003366 */
+
+#lateral * {
+  font-size: 0.9em;
+  font-size: inherit;
+}
+
+.date {
+  color: #999999;
+  width: 100%;
+}
+
+#notiicas .aside__title {
+  color: #003366;
+}
+
+/* El texto del elemento #publicidad es de color gris oscuro #555 y todos los enlaces de color
+#CC6600 */
+
+#publicidad {
+  color: #555555;
+}
+
+#publicidad a {
+  color: #cc6600;
+}
+
+/* Los enlaces contenidos dentro de .articulo son de color #CC6600 y todos los párrafos
+muestran un margen superior e inferior de 0.3em */
+
+article a {
+  color: #cc6600;
+}
+
+article p {
+  margin-block: 0.3em;
+}
+
+/* Añadir las reglas necesarias para que el contenido de #secundario se vea como en la imagen
+que se muestra */
+
+#secundario h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+#secundario a {
+  color: blue;
+  font-size: 0.75rem;
+}
+
+/* Añadir las reglas necesarias para que el contenido de #pie se vea como en la imagen que se
+muestra */
+
+#pie {
+  padding-block: 0;
+}
