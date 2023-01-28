@@ -76,6 +76,9 @@ h1 {
 
 header {
   padding: 1em;
+  margin-inline: auto;
+  margin-block-end: 0.5em;
+  width: min(50em, 100% - 2rem);
 }
 
 #menu {
@@ -119,38 +122,62 @@ article + article {
   margin-block-start: 1em;
 }
 
-/* ================= 
-    Requerimientos 
-================= */
-
-/* Eliminar el borde gris que muestran por defecto todos los elementos */
 .black-border {
   border: none;
 }
 
-/* El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99) */
 #menu {
   border-block-start: 1px solid #004c99;
   border-block-end: 1px solid #004c99;
 }
 
-/* El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5) */
 #noticias {
   border: 1px solid #c5c5c5;
 }
 
-/* El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600 */
 #publicidad {
   border: 1px dotted #cc6600;
 }
 
-/* El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600 */
 #secundario {
   border: 1px solid #cc6600;
 }
 
-/* El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5 */
 #pie {
   border-block-start: 1px solid #c5c5c5;
   border-block-end: 1px solid #c5c5c5;
+}
+
+/* ================= 
+    Requerimientos 
+================= */
+
+/* Los elementos #noticias y #pie tiene un color de fondo gris claro (#F8F8F8) */
+#noticias,
+#pie {
+  background-color: #f8f8f8;
+}
+
+/* El elemento #publicidad muestra un color de fondo amarillo claro (#FFF6CD) */
+#publicidad {
+  background-color: #fff6cd;
+}
+
+/* Los elementos <h2> de #secundario muestran un color de fondo #DB905C y un pequeño padding de 0.2em */
+.secundario__title {
+  padding: 0.2em;
+  background-color: #db905c;
+}
+
+/* El fondo del elemento #menu se construye mediante una pequeña imagen llamada fondo_menu.gif */
+#menu {
+  /* Propiedad background-image utilizada como imagen de fondo */
+  background-image: linear-gradient(135deg, #f8f8f8, #fff6cd, #db905c);
+}
+
+/* El logotipo del sitio se muestra mediante una imagen de fondo del elemento <h1> contenido en
+el elemento #cabecera (la imagen se llama logo.gif) */
+header {
+  /* Propiedad background-image utilizada como imagen de fondo */
+  background-image: linear-gradient(135deg, #f8f8f8, #fff6cd, #db905c);
 }
