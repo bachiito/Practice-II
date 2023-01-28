@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: min(50em, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-block-start: 2rem;
+}
+
+.img {
+  opacity: 0.75;
+  border-radius: 0.5rem;
+  transition: all 0.75s ease;
+}
+
+.img:hover {
+  opacity: 1;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 2em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
