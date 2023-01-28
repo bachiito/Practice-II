@@ -99,6 +99,7 @@ header {
   padding-block: 0.5em;
   width: min(50em, 100% - 2rem);
   margin-inline: auto;
+  margin-block-start: 1em;
 }
 
 article + article {
@@ -112,10 +113,6 @@ article + article {
 }
 
 #publicidad {
-  margin-block-start: 1em;
-}
-
-#pie {
   margin-block-start: 1em;
 }
 

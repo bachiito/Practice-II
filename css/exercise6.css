@@ -6,14 +6,13 @@
 
 .container {
   width: min(50em, 100% - 2rem);
-  padding: 1rem;
   margin-inline: auto;
-
-  background-color: lightgray;
 }
 
 .flex-group {
   display: flex;
+  padding: 1rem;
+  background-color: lightgray;
 }
 
 .anterior {
@@ -23,4 +22,23 @@
 p {
   margin: 0;
   font-size: 1.125rem;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  font-family: Arial, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  padding: 0.5em 1em;
+  margin-block-start: 1em;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 100%, 50%);
+  transition: all 0.75s ease;
+}
+
+.btn:hover {
+  opacity: 0.75;
 }
